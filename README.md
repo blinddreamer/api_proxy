@@ -58,8 +58,6 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to us at blinddreamer@huku.rocks.
+If you have any questions or feedback, feel free to reach out at blinddreamer@huku.rocks.
 
 ---
-
-Feel free to customize the above template with more information specific to your project. You can add sections like "Features," "Deployment," "Troubleshooting," or any other relevant details. Also, don't forget to update the badges and contact information to match your project details.
