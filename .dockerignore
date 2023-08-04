@@ -1,0 +1,36 @@
+# Exclude development and unnecessary files
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.env
+tmp
+logs
+
+# Exclude build artifacts
+dist
+build
+out
+
+# Exclude version control files
+.git
+.gitignore
+
+# Exclude IDE specific files
+.vscode
+.idea
+*.code-workspace
+
+# Exclude Docker specific files
+Dockerfile
+.dockerignore
+.dockerignore.example
+
+# Exclude test files
+test
+tests
+
+# Exclude documentation and notes
+docs
+notes

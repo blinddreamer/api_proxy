@@ -1,0 +1,66 @@
+# Dependency directories
+/node_modules
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables file (if you use .env files)
+.env
+
+# IDE or editor specific files
+.vscode/
+.idea/
+
+# Compiled files
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.cache/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+*.pid
+*.log.*
+
+# Miscellaneous
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# If using TypeScript, uncomment the following lines:
+# /tsconfig.json
+# /tsconfig*.json
+# /src/**/*.js
+
+# If using Babel, uncomment the following lines:
+# /babel.config.json
+# /babel.config.js
+# /src/**/*.js
+
+# If using webpack, uncomment the following lines:
+# /webpack.config.js
+# /webpack*.js
+
+# If using ESLint, uncomment the following lines:
+# /eslintrc.js
+# /eslintrc.cjs
+# /src/**/*.js
+
+# If using Prettier, uncomment the following lines:
+# /prettierrc
+# /prettier.config.js
+# /prettier.config.cjs
+# /prettier.config.mjs
+# /src/**/*.js
