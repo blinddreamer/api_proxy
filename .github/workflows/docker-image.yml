@@ -2,7 +2,7 @@ name: Docker Image CI
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: saitooooooooo
+  IMAGE_NAME: api_proxy 
 
 on:
   push:
