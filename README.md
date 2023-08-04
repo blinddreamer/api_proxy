@@ -37,12 +37,10 @@ The CORS configuration is set in the proxy server code using the `cors` middlewa
 
 If you want to allow requests from a different domain, you can modify the `origin` property in the `corsOptions` object in `server.js`.
 
-// CORS configuration: Replace 'your-frontend-domain' with your actual frontend domain
+Replace 'your-frontend-domain' with your actual frontend domain
 const corsOptions = {
   origin: 'https://huku.rocks',
 };
-
-Remember to replace 'https://huku.rocks' with the actual domain of your frontend application.
 
 ### Usage
 
