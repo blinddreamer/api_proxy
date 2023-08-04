@@ -31,6 +31,20 @@ npm install
 
 - Update the `apiUrl` variable in `server.js` to point to your desired external API endpoint.
 
+The proxy server is configured to allow cross-origin requests only from the domain 'https://huku.rocks'. This helps secure the API requests and prevents unauthorized access from other origins.
+
+The CORS configuration is set in the proxy server code using the `cors` middleware in Express. By specifying `origin: 'https://huku.rocks'`, the proxy server will respond to requests originating from this domain.
+
+If you want to allow requests from a different domain, you can modify the `origin` property in the `corsOptions` object in `server.js`.
+
+```javascript
+// CORS configuration: Replace 'your-frontend-domain' with your actual frontend domain
+const corsOptions = {
+  origin: 'https://huku.rocks',
+};
+
+Remember to replace 'https://huku.rocks' with the actual domain of your frontend application.
+
 ### Usage
 
 1. Start the proxy server:
