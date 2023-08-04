@@ -6,7 +6,7 @@ const port = 5000; // Choose any available port
 
 // CORS configuration: Replace 'your-frontend-domain' with your actual frontend domain
 const corsOptions = {
-  origin: 'http://saitooooooooo',
+  origin: 'https://huku.rocks',
 };
 
 app.use(cors(corsOptions));
