@@ -1,5 +1,3 @@
-Apologies for the confusion. If you don't want to modify the `server.js` file, you can set the Docker environment variables directly in your Dockerfile or when running the Docker container. Here's the updated README with instructions on how to set the Docker environment variables:
-
 # Proxy Server for API Requests
 
 ![GitHub](https://img.shields.io/github/license/blinddreamer/api_proxy)
