@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const port = 5000; // Choose any available port
+const port = process.env.PORT || 5000; // Use the PORT environment variable if provided, otherwise use 5000
 
-// CORS configuration: Replace 'your-frontend-domain' with your actual frontend domain
+// CORS configuration using environment variable for frontend domain
 const corsOptions = {
-  origin: 'https://huku.rocks',
+  origin: process.env.FRONTEND_DOMAIN, // Use the FRONTEND_DOMAIN environment variable
 };
 
 app.use(cors(corsOptions));
@@ -17,7 +17,9 @@ app.get('/api/monitors', async (req, res) => {
     // Use dynamic import() instead of require() for node-fetch
     const fetch = await import('node-fetch');
 
-    const apiUrl = "https://api.hetrixtools.com/v1/e1546211de0f332ec510d8a85c9461e2/uptime/monitors/0/30/";
+    // Use environment variable for the API URL
+    const apiUrl = process.env.API_URL;
+
     const response = await fetch.default(apiUrl);
     if (!response.ok) {
       throw new Error('Network response was not ok');
