@@ -1,3 +1,5 @@
+Apologies for the confusion. If you don't want to modify the `server.js` file, you can set the Docker environment variables directly in your Dockerfile or when running the Docker container. Here's the updated README with instructions on how to set the Docker environment variables:
+
 # Proxy Server for API Requests
 
 ![GitHub](https://img.shields.io/github/license/blinddreamer/api_proxy)
@@ -18,37 +20,29 @@ To use this proxy server in your project, follow the steps below:
 
 1. Clone the repository:
 
+```
 git clone https://github.com/blinddreamer/api_proxy
 cd api_proxy
-
+```
 
 2. Install the dependencies:
 
+```
 npm install
-
+```
 
 ### Configuration
 
-- Update the `apiUrl` variable in `server.js` to point to your desired external API endpoint.
-
-The proxy server is configured to allow cross-origin requests only from the domain 'https://huku.rocks'. This helps secure the API requests and prevents unauthorized access from other origins.
-
-The CORS configuration is set in the proxy server code using the `cors` middleware in Express. By specifying `origin: 'https://huku.rocks'`, the proxy server will respond to requests originating from this domain.
-
-If you want to allow requests from a different domain, you can modify the `origin` property in the `corsOptions` object in `server.js`.
-
-Replace 'your-frontend-domain' with your actual frontend domain
-const corsOptions = {
-  origin: 'https://huku.rocks',
-};
+The proxy server is already set up to use environment variables for `PORT`, `FRONTEND_DOMAIN`, and `API_URL`. 
 
 ### Usage
 
 1. Start the proxy server:
 
-
-npm start
-
+```
+docker build -t proxy-server .
+docker run -p 5000:5000 -e FRONTEND_DOMAIN=https://your-frontend-domain.com -e API_URL=https://your-api-url.com proxy-server
+```
 
 The proxy server will be available at `http://localhost:5000`.
 
